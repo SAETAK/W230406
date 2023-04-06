@@ -127,12 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FGoblin.cpp" />
     <ClCompile Include="FPlayer.cpp" />
+    <ClCompile Include="FSlime.cpp" />
+    <ClCompile Include="FWildBoar.cpp" />
+    <ClCompile Include="Goblin.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Slime.cpp" />
+    <ClCompile Include="WildBoar.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FGoblin.h" />
     <ClInclude Include="FPlayer.h" />
+    <ClInclude Include="FSlime.h" />
+    <ClInclude Include="FWildBoar.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
