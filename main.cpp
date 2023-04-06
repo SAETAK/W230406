@@ -15,5 +15,9 @@ int main()
 
 
 	delete Player;
+	delete Slime;
+	delete Goblin;
+	delete WildBoar;
+
 	return 0;
 }
