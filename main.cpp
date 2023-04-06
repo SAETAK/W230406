@@ -13,6 +13,10 @@ int main()
 	FGoblin* Goblin = new FGoblin();
 	FWildBoar* WildBoar = new FWildBoar();
 
+	Player->Move();
+	Slime->Move();
+	Goblin->Move();
+	WildBoar->Move();
 
 	delete Player;
 	delete Slime;
