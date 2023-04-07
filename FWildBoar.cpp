@@ -3,5 +3,8 @@
 
 FWildBoar::FWildBoar()
 {
-	std::cout << "¸äµÅÁö »ý¼º" << std::endl;
+}
+
+FWildBoar::~FWildBoar()
+{
 }

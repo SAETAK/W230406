@@ -6,6 +6,10 @@ FCharacter::FCharacter()
 	std::cout << "캐릭터 생성" << std::endl;
 }
 
+FCharacter::~FCharacter()
+{
+}
+
 void FCharacter::Move()
 {
 	std::cout << "이동한다" << std::endl;
