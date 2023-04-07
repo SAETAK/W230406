@@ -4,3 +4,8 @@
 FGoblin::FGoblin()
 {
 }
+
+void FGoblin::Move()
+{
+
+}

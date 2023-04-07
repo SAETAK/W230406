@@ -8,3 +8,7 @@ FSlime::FSlime()
 FSlime::~FSlime()
 {
 }
+
+void FSlime::Move()
+{
+}

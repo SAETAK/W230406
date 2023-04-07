@@ -3,7 +3,7 @@
 
 FCharacter::FCharacter()
 {
-	std::cout << "캐릭터 생성" << std::endl;
+
 }
 
 FCharacter::~FCharacter()

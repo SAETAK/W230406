@@ -8,3 +8,7 @@ FPlayer::FPlayer()
 FPlayer::~FPlayer()
 {
 }
+
+void FPlayer::Move()
+{
+}
