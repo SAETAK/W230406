@@ -8,7 +8,7 @@ public:
 	int HP;
 	int MP;
 
-	void Move();
+	virtual void Move();
 	void Attack();
 };
 

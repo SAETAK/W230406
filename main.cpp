@@ -12,39 +12,30 @@ int main()
 	srand((unsigned int)time);
 	FPlayer* Player = new FPlayer(); //1
 
-	vector<FSlime*> Slimes; //1-3
-	vector<FGoblin*> Goblins; //1-3
-	vector<FWildBoar*> WildBoars; //1-3
+	vector<FCharacter*> Characters;
+
 	int Count = (rand() % 3) + 1;
 	for (int i = 0; i < Count; ++i)
 	{
-		Slimes.push_back(new FSlime());
+		Characters.push_back(new FSlime());
+	}
+
+	for (int i = 0; i < Count; ++i)
+	{
+		Characters.push_back(new FGoblin());
+	}
+
+	for (int i = 0; i < Count; ++i)
+	{
+		Characters.push_back(new FWildBoar());
 	}
 	
-	for (int i = 0; i < Count; ++i)
-	{
-		Goblins.push_back(new FGoblin());
-	}
-
-	for (int i = 0; i < Count; ++i)
-	{
-		WildBoars.push_back(new FWildBoar());
-	}
-
 	while (1)
 	{
 		Player->Move();
-		for (int i = 0; i < Slimes.size(); ++i)
+		for (int i = 0; i < Characters.size(); ++i)
 		{
-			Slimes[i]->Move();
-		}
-		for (int i = 0; i < Goblins.size(); ++i)
-		{
-			Goblins[i]->Move();
-		}
-		for (int i = 0; i < WildBoars.size(); ++i)
-		{
-			WildBoars[i]->Move();
+			Characters[i]->Move();
 		}
 	}
 	//Slimes->Move(); //1-3
@@ -52,17 +43,9 @@ int main()
 	//WildBoars->Move(); //1-3
 
 	delete Player;
-	for (int i = 0; i < Slimes.size(); ++i)
+	for (int i = 0; i < Characters.size(); ++i)
 	{
-		delete Slimes[i];
-	}
-	for (int i = 0; i < Goblins.size(); ++i)
-	{
-		delete Goblins[i];
-	}
-	for (int i = 0; i < WildBoars.size(); ++i)
-	{
-		delete WildBoars[i];
+		delete Characters[i];
 	}
 	//delete Slimes;
 	//delete Goblins;

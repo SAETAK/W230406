@@ -7,6 +7,6 @@ class FWildBoar : public FCharacter
 public:
 	FWildBoar();
 	~FWildBoar();
-	void Move();
+	void Move() override;
 };
 
