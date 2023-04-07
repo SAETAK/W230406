@@ -4,4 +4,5 @@
 class FPlayer : public FCharacter
 {
 public:
+	FPlayer();
 };

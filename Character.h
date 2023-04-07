@@ -2,6 +2,8 @@
 class FCharacter
 {
 public:
+	FCharacter();
+
 	int HP;
 	int MP;
 
